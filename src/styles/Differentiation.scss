@@ -1,0 +1,67 @@
+.differentiation-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #444;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.differentiation-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.differentiation-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.card-wrapper {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    perspective: 1200px;
+    /* Añadido para mejorar el efecto 3D */
+    cursor: pointer;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+}
+
+.card-wrapper.flipped .card-inner {
+    transform: rotateY(180deg);
+    /* Rotación corregida para el efecto de giro */
+}
+
+.differentiation-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #222;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 20px; */
+}

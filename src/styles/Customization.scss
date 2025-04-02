@@ -1,0 +1,200 @@
+// Contenedor principal de la sección de personalización
+.customization-section {
+    padding: 60px 20px;
+    background-color: #1e1e1e;
+    text-align: center;
+    color: white;
+}
+
+// Título de la sección
+.customization-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+// Contenedor de tarjetas de personalización
+.customization-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+// Tarjeta individual
+.customization-card {
+    width: 300px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(30px);
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+// Animación de entrada cuando la tarjeta entra al viewport
+.customization-card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+// Delay escalonado para cada tarjeta
+.customization-card.fade-in:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.customization-card.fade-in:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.customization-card.fade-in:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.customization-card.fade-in:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+// Efecto hover para agrandar la tarjeta
+.customization-card:hover {
+    transform: scale(1.05);
+}
+
+// Imagen dentro de la tarjeta
+.customization-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+// Etiqueta debajo de la imagen
+.customization-card p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+// Estilos responsivos para pantallas pequeñas
+@media (max-width: 768px) {
+    .customization-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .customization-card {
+        width: 90%;
+    }
+}
+
+
+/* .customization-section {
+    padding: 60px 20px;
+    background-color: #1e1e1e;
+    text-align: center;
+    color: white;
+}
+
+.customization-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.customization-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.customization-options.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.customization-card {
+    width: 300px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 1s ease;
+}
+
+.customization-card:hover {
+    transform: scale(1.05);
+}
+
+.customization-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.customization-card p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .customization-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .customization-card {
+        width: 90%;
+    }
+}
+ */
+
+/* .customization-section {
+    text-align: center;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.customization-options {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    overflow-x: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.customization-options.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.option {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.option:hover {
+    opacity: 0.7;
+    transform: scale(1.01);
+}
+
+.custom-icon {
+    width: 100%;
+    height: auto;
+}
+
+.option p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+} */

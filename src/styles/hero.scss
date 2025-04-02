@@ -1,0 +1,34 @@
+.hero-section {
+  background: url("../assets/images/herobackground.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(1, 43, 105);
+  font-size: 2rem;
+  font-weight: bold;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content {
+  opacity: 0;
+  animation: fadeInText 2s ease-in-out 0.7s forwards;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
