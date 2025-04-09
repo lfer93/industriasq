@@ -1,13 +1,13 @@
-import "../styles/Clients.scss";
+import "../home/styles/clients.scss";
 import { useEffect } from "react";
 import { Button } from "@mui/material";
-import cliente1 from "../assets/images/rhi-logo.png";
-import cliente2 from "../assets/images/dmcontrol-logo.png";
-import cliente3 from "../assets/images/lain-logo2.png";
-import cliente4 from "../assets/images/pissa-logo.png";
-import cliente5 from "../assets/images/ufi-logo.png";
-import cliente6 from "../assets/images/atgroup-logo.png";
-import transicionImg from "../assets/images/uniformes-transicion.png";
+import cliente1 from "../../assets/images/rhi-logo.png"
+import cliente2 from "../../assets/images/dmcontrol-logo.png";
+import cliente3 from "../../assets/images/lain-logo2.png";
+import cliente4 from "../../assets/images/pissa-logo.png";
+import cliente5 from "../../assets/images/ufi-logo.png";
+import cliente6 from "../../assets/images/atgroup-logo.png";
+import transicionImg from "../../assets/images/uniformes-transicion.png";
 
 
 const Clients = () => {

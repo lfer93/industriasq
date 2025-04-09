@@ -1,11 +1,11 @@
-import "../styles/Differentiation.scss";
+import "../home/styles/Differentiation.scss";
 import { useState, useEffect, useRef } from "react";
 import { Card, CardContent, Typography, CardMedia } from "@mui/material";
-import calidadIcon from "../assets/images/calidad.png";
-import deliveryIcon from "../assets/images/delivery.png";
-import personalizacionIcon from "../assets/images/personalizacion.png";
-import asesoriaIcon from "../assets/images/asesoria.png";
-import tiemposIcon from "../assets/images/tiempos.png";
+import calidadIcon from "../../assets/images/calidad.png";
+import deliveryIcon from "../../assets/images/delivery.png";
+import personalizacionIcon from "../../assets/images/personalizacion.png";
+import asesoriaIcon from "../../assets/images/asesoria.png";
+import tiemposIcon from "../../assets/images/tiempos.png";
 
 const differentiationData = [
     { title: "Maxima Calidad", description: "Nuestros uniformes estan hechos con la mejor calidad, al mejor precio. Innovamos siempre nuestros procesos para garantizar la comodidad, durabilidad y resistencia de nuestros uniformes.", image: calidadIcon },

@@ -1,11 +1,11 @@
 //importacion de estilos y hooks e imagenes
 
-import "../styles/Customization.scss";
+import "../home/styles/Customization.scss";
 import { useEffect, useRef, useState } from "react";
-import bordadoIcon from "../assets/images/Bordado.png"
-import serigrafiaIcon from "../assets/images/Serigrafia.png";
-import grabadoIcon from "../assets/images/laser.png";
-import dtfIcon from "../assets/images/dtf-print.png";
+import bordadoIcon from "../../assets/images/Bordado.png"
+import serigrafiaIcon from "../../assets/images/Serigrafia.png";
+import grabadoIcon from "../../assets/images/laser.png";
+import dtfIcon from "../../assets/images/dtf-print.png";
 
 const Customization = () => {
     const cardsRef = useRef([]);  //Referencias a cada tarjeta

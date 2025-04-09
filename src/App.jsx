@@ -1,25 +1,23 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import About from "./components/About";
-import Clients from "./components/Clients";
-import Customization from "./components/Customization";
-import Differentiation from "./components/Differentiation";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import "./styles/App.scss";
+import Layout from "./layout/Layout";
+import Home from "./pages/home/Home";
+import Productos from "./pages/productos/Productos";
+import Nosotros from "./pages/nosotros/Nosotros";
+import Contacto from "./pages/contacto/Contacto";
 
 function App() {
   return (
-    <div className="app-container">
-    <Header />
-    <Hero />
-    <About />
-    <Customization />
-    <Differentiation />
-    <Clients />
-    <Footer />
-  </div>
-);
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="productos" element={<Productos />} />
+          <Route path="nosotros" element={<Nosotros />} />
+          <Route path="contacto" element={<Contacto />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
 }
 
 export default App

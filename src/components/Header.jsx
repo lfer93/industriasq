@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AppBar, Toolbar, Typography, IconButton, Button, Drawer, List, ListItem, ListItemText, Box } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import icon from "../assets/images/icon.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -10,7 +11,12 @@ const Header = () => {
     setDrawerOpen(open);
   };
 
-  const navItems = ["Inicio", "Catálogo", "Nosotros", "Contacto"];
+  const navItems = [
+    { label: "Inicio", path: "/" },
+    { label: "Productos", path: "/productos" },
+    { label: "Nosotros", path: "/nosotros" },
+    { label: "Contacto", path: "/contacto" },
+  ];
 
   return (
     <AppBar position="fixed" color="primary">
@@ -25,9 +31,14 @@ const Header = () => {
         <Box sx={{ display: "flex", alignItems: "center" }}>
           {/* Botones para pantallas grandes */}
           <Box sx={{ display: { xs: "none", md: "flex" }, gap: 2 }}>
-            {navItems.map((text) => (
-              <Button key={text} color="inherit">
-                {text}
+            {navItems.map((item) => (
+              <Button
+                key={item.label}
+                color="inherit"
+                component={Link} // <-- usado para navegación
+                to={item.path}    // <-- ruta asociada al botón
+              >
+                {item.label}
               </Button>
             ))}
           </Box>
@@ -54,9 +65,14 @@ const Header = () => {
             onKeyDown={toggleDrawer(false)}
           >
             <List>
-              {navItems.map((text) => (
-                <ListItem button key={text}>
-                  <ListItemText primary={text} />
+              {navItems.map((item) => (
+                <ListItem
+                  button
+                  key={item.label}
+                  component={Link} // <-- usado para navegación en menú móvil
+                  to={item.path}    // <-- ruta asociada al ítem
+                >
+                  <ListItemText primary={item.label} />
                 </ListItem>
               ))}
             </List>
@@ -66,7 +82,6 @@ const Header = () => {
     </AppBar>
   );
 };
-
 
 
 export default Header;

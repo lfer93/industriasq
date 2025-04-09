@@ -1,4 +1,4 @@
-import "../styles/About.scss/"
+import "../home/styles/About.scss";
 const About = () => {
     return (
         <div className="about-section">
