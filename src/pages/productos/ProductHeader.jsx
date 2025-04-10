@@ -2,7 +2,6 @@ import { Box, Typography, Button } from "@mui/material";
 import { useRef, useEffect, useState } from "react";
 import backgroundImage from "../../assets/images/background-productheader.png";
 import "../../pages/productos/Productos.scss";
-import UniformBenefits from "../nosotros/UniformBenefits";
 
 const ProductHeader = () => {
   const headerRef = useRef(null);
@@ -60,7 +59,6 @@ const ProductHeader = () => {
           </Button>
         </Box>
       </Box>
-      <UniformBenefits />
     </>
   );
 };

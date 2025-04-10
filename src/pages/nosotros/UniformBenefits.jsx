@@ -2,7 +2,6 @@
 import { Box, Typography } from "@mui/material";
 import { Groups, Savings, Storefront } from "@mui/icons-material";
 import { useEffect, useRef, useState } from "react";
-import "./Nosotros.scss";
 
 const UniformBenefits = () => {
     const sectionRef = useRef(null);
