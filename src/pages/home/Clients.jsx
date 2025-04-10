@@ -45,13 +45,13 @@ const Clients = () => {
 
             {/* Barra de transicion con boton */}
             <div
-        className="transition-bar"
-        style={{ 
-          backgroundImage: `url(${transicionImg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center 65%",
-        }}
-      >                
+                className="transition-bar"
+                style={{
+                    backgroundImage: `url(${transicionImg})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center 65%",
+                }}
+            >
                 <div className="transition-content">
                     <Button
                         variant="contained"

@@ -1,3 +1,5 @@
+// src/pages/productos/ProductHeader.jsx
+
 import { Box, Typography, Button } from "@mui/material";
 import { useRef, useEffect, useState } from "react";
 import backgroundImage from "../../assets/images/background-productheader.png";
@@ -31,6 +33,7 @@ const ProductHeader = () => {
         sx={{
           width: "100%",
           height: "100vh",
+          overflow: "hidden",
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -42,17 +45,36 @@ const ProductHeader = () => {
           px: 2,
         }}
       >
-        <Box>
-          <Typography variant="h2" sx={{ color: "white", fontWeight: "bold", mb: 2 }}>
+        <Box sx={{ px: { xs: 2, md: 0 } }}>
+          <Typography
+            variant="h2"
+            sx={{
+              color: "white",
+              fontWeight: "bold",
+              mb: 2,
+              fontSize: { xs: "2.5rem", md: "4rem" },
+              wordWrap: "break-word",
+            }}
+          >
             Productos
           </Typography>
-          <Typography variant="body1" sx={{ color: "#ddd", fontSize: "1.2rem", mb: 3 }}>
+          <Typography
+            variant="body1"
+            sx={{
+              color: "#ddd",
+              fontSize: { xs: "1rem", md: "1.2rem" },
+              mb: 3,
+              px: { xs: 2, md: 0 },
+              lineHeight: 1.6,
+              wordWrap: "break-word",
+            }}
+          >
             Tenemos los mejores productos para cumplir con las necesidades de nuestros clientes.
           </Typography>
           <Button
             variant="contained"
             color="primary"
-            href="https://drive.google.com/your-catalogo-link"
+            href="../catalog/catindustriasq.pdf"
             target="_blank"
           >
             Descargar catálogo completo

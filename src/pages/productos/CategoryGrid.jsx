@@ -1,28 +1,31 @@
 // src/pages/productos/CategoryGrid.jsx
 import { Grid, Box, Typography } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
-import "../../pages/productos/Productos.scss";
+import inviernoImg from "../../assets/images/invierno.png"
+import ejecutivaImg from "../../assets/images/ejecutiva.png"
+import industrialImg from "../../assets/images/industrial.png"
+import promocionalesImg from "../../assets/images/promocionales.png"
 
 const categories = [
     {
         name: "Línea Ejecutiva",
-        image: "/images/linea_ejecutiva.jpg",
-        link: "https://drive.google.com/linea-ejecutiva",
+        image: ejecutivaImg,
+        link: "https://drive.google.com/drive/folders/1577dIWyPxjuwRCdwLV5bKbO5jxzgltfj?usp=drive_link",
     },
     {
         name: "Línea Industrial",
-        image: "/images/categorias/industrial.jpg",
-        link: "https://drive.google.com/linea-industrial",
+        image: industrialImg,
+        link: "https://www.industriasq.com",
     },
     {
         name: "Invierno",
-        image: "/images/categorias/invierno.jpg",
-        link: "https://drive.google.com/invierno",
+        image: inviernoImg,
+        link: "https://drive.google.com/drive/folders/1taydb3TFmlnLuCrjZI3iY8oU-z18oH3_?usp=drive_link",
     },
     {
         name: "Promocionales",
-        image: "/images/categorias/promocionales.jpg",
-        link: "https://drive.google.com/promocionales",
+        image: promocionalesImg,
+        link: "https://www.promocionalesenlinea.com/industriasqpromocionales",
     },
 ];
 

@@ -4,7 +4,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { useEffect, useState } from "react";
-import { styled } from "@mui/system";
+//import { styled } from "@mui/system";
 import logo from "../assets/images/icon.png";
 
 const Footer = () => {
@@ -77,14 +77,14 @@ const Footer = () => {
                     <Box display="flex" alignItems="center" gap={2}>
                         <img src={logo} alt="Logo Industrias Q" style={{ height: "40px" }} />
                         <Box>
-                            <Typography variant="body2">Teléfono: 844-000-0000</Typography>
-                            <Typography variant="body2">Email: contacto@industriasq.com</Typography>
+                            <Typography variant="body2">Teléfono y Whatsapp: 844-173-7180</Typography>
+                            <Typography variant="body2">Email: ventas@industriasq.com</Typography>
                         </Box>
                     </Box>
 
                     <Box>
                         <Link
-                            href="/catalogo.pdf"
+                            href="../catalog/catindustriasq.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             underline="hover"
@@ -98,7 +98,7 @@ const Footer = () => {
                         <Typography variant="body2" sx={{ mb: 0.5 }}>Síguenos en nuestras redes</Typography>
                         <IconButton
                             component="a"
-                            href="https://facebook.com"
+                            href="https://www.facebook.com/industriasq/"
                             target="_blank"
                             rel="noopener"
                             sx={{ color: "white" }}

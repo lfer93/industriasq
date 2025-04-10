@@ -1,5 +1,3 @@
-// src/pages/nosotros/Nosotros.jsx
-
 // Importación de componentes de Material UI y hooks de React
 import { Box, Typography } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
@@ -36,25 +34,39 @@ const Nosotros = () => {
                 sx={{
                     width: "100%",
                     py: { xs: 12, md: 20 },
-                    px: 4,
+                    px: 2,
                     textAlign: "center",
                     backgroundImage: `url(${aboutBackground})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
                     backgroundColor: "#2a2a2a",
+                    overflow: "hidden",
                 }}
             >
-                <Typography variant="h3" sx={{ color: "white", fontWeight: "bold", mb: 4 }}>
+                <Typography
+                    variant="h3"
+                    sx={{
+                        color: "white",
+                        fontWeight: "bold",
+                        mb: 4,
+                        px: { xs: 2, md: 0 },
+                        fontSize: { xs: "2rem", md: "3rem" },
+                        wordWrap: "break-word"
+                    }}
+                >
                     ¿Quiénes somos?
                 </Typography>
                 <Typography
                     variant="body1"
                     sx={{
                         color: "#ccc",
-                        fontSize: "1.2rem",
+                        fontSize: { xs: "1rem", md: "1.2rem" },
                         maxWidth: 800,
                         mx: "auto",
+                        px: { xs: 2, md: 0 },
+                        lineHeight: 1.6,
+                        wordWrap: "break-word"
                     }}
                 >
                     Somos una empresa 100% mexicana dedicada a ofrecer uniformes de la más alta calidad para sectores industriales,

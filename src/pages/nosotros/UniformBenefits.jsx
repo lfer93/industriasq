@@ -29,13 +29,20 @@ const UniformBenefits = () => {
             className={visible ? "fade-in" : "hidden"}
             sx={{
                 width: "100%",
-                px: 4,
+                px: 2,
                 py: { xs: 10, md: 14 },
                 backgroundColor: "#2a2a2a",
                 textAlign: "center",
             }}
         >
-            <Typography variant="h4" sx={{ fontWeight: "bold", mb: 6 }}>
+            <Typography variant="h4" sx={{
+                fontWeight: "bold",
+                mb: 6,
+                px: { xs: 2, md: 0 },
+                fontSize: { xs: "2rem", md: "2.5rem" },
+                color: "white",
+                wordWrap: "break-word"
+            }}>
                 ¿Por qué usar uniforme en tu empresa?
             </Typography>
 
@@ -47,6 +54,8 @@ const UniformBenefits = () => {
                     justifyContent: "center",
                     alignItems: "stretch",
                     flexWrap: "wrap",
+                    px: { xs: 2, md: 0 },
+                    overflow: "hidden",
                 }}
             >
                 <Box
@@ -58,7 +67,9 @@ const UniformBenefits = () => {
                         borderRadius: 2,
                         p: 4,
                         boxShadow: 3,
-                        textAlign: "left", color: "#eee",
+                        textAlign: "left",
+                        color: "#eee",
+                        boxSizing: "border-box"
                     }}
                 >
                     <Groups sx={{ fontSize: 40, color: "#90caf9", mb: 1 }} />
@@ -80,6 +91,8 @@ const UniformBenefits = () => {
                         p: 4,
                         boxShadow: 3,
                         textAlign: "left",
+                        color: "#eee",
+                        boxSizing: "border-box"
                     }}
                 >
                     <Savings sx={{ fontSize: 40, color: "primary.main", mb: 1 }} />
@@ -101,6 +114,8 @@ const UniformBenefits = () => {
                         p: 4,
                         boxShadow: 3,
                         textAlign: "left",
+                        color: "#eee",
+                        boxSizing: "border-box"
                     }}
                 >
                     <Storefront sx={{ fontSize: 40, color: "primary.main", mb: 1 }} />
