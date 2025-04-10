@@ -56,6 +56,7 @@ const UniformBenefits = () => {
                     flexWrap: "wrap",
                     px: { xs: 2, md: 0 },
                     overflow: "hidden",
+                    mb: 8,
                 }}
             >
                 <Box

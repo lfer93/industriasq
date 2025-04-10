@@ -70,7 +70,7 @@ const CategoryGrid = () => {
             px={{ xs: 2, md: 4 }}
             py={{ xs: 4, md: 6 }}
             justifyContent="center"
-            sx={{ mb: 8 }}
+            sx={{ mb: 12 }}
         >
             {categories.map((category, index) => (
                 <Grid
