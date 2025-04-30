@@ -1,4 +1,4 @@
-import "../../pages/home/styles/clients.scss";
+import "../../../src/pages/home/styles/clients.scss";
 import { useEffect } from "react";
 import { Button } from "@mui/material";
 import cliente1 from "../../assets/images/rhi-logo.png"
