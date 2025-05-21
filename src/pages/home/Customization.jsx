@@ -2,10 +2,10 @@
 
 import "../home/styles/Customization.scss";
 import { useEffect, useRef, useState } from "react";
-import bordadoIcon from "../../assets/images/Bordado.png"
-import serigrafiaIcon from "../../assets/images/Serigrafia.png";
-import grabadoIcon from "../../assets/images/laser.png";
-import dtfIcon from "../../assets/images/dtf-print.png";
+import bordadoIcon from "../../assets/images/Bordado.webp"
+import serigrafiaIcon from "../../assets/images/Serigrafia.webp";
+import grabadoIcon from "../../assets/images/laser.webp";
+import dtfIcon from "../../assets/images/dtf-print.webp";
 
 const Customization = () => {
     const cardsRef = useRef([]);  //Referencias a cada tarjeta

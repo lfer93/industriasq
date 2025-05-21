@@ -2,7 +2,7 @@
 import { Box, Typography } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
 import "./Nosotros.scss";
-import aboutBackground from "../../assets/images/about-background.png"; // Imagen de fondo
+import aboutBackground from "../../assets/images/about-background.jpg"; // Imagen de fondo
 import UniformBenefits from "./UniformBenefits";
 
 // Componente principal de la sección "¿Quiénes somos?" + Beneficios del uniforme

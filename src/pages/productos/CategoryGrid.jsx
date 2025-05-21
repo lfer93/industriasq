@@ -1,10 +1,10 @@
 // src/pages/productos/CategoryGrid.jsx
 import { Grid, Box, Typography } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
-import inviernoImg from "../../assets/images/invierno.png"
-import ejecutivaImg from "../../assets/images/ejecutiva.png"
-import industrialImg from "../../assets/images/industrial.png"
-import promocionalesImg from "../../assets/images/promocionales.png"
+import inviernoImg from "../../assets/images/invierno.jpg"
+import ejecutivaImg from "../../assets/images/ejecutiva.jpg"
+import industrialImg from "../../assets/images/industrial.jpg"
+import promocionalesImg from "../../assets/images/promocionales.jpg"
 
 const categories = [
     {

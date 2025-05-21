@@ -2,7 +2,7 @@
 
 import { Box, Typography, Button } from "@mui/material";
 import { useRef, useEffect, useState } from "react";
-import backgroundImage from "../../assets/images/background-productheader.png";
+import backgroundImage from "../../assets/images/background-productheader.webp";
 import "../../pages/productos/Productos.scss";
 
 const ProductHeader = () => {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AppBar, Toolbar, Typography, IconButton, Button, Drawer, List, ListItem, ListItemText, Box } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import icon from "../assets/images/icon.png";
+import icon from "../assets/images/icon.webp";
 import { Link } from "react-router-dom";
 
 const Header = () => {

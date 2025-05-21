@@ -5,7 +5,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { useEffect, useState } from "react";
 //import { styled } from "@mui/system";
-import logo from "../assets/images/icon.png";
+import logo from "../assets/images/icon.webp";
 
 const Footer = () => {
     const [visible, setVisible] = useState(false);
