@@ -89,6 +89,8 @@ const CategoryGrid = () => {
                         href={category.link}
                         target="_blank"
                         sx={{
+                            width: "100%",
+                            aspectRatio: "4 / 3", // 🔧 Se añadió para forzar un cuadro perfecto
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
