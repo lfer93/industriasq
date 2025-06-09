@@ -74,7 +74,7 @@ const ProductHeader = () => {
           <Button
             variant="contained"
             color="primary"
-            href="../catalog/catindustriasq.pdf"
+            href="../catalog/industriasqcatalogo.pdf"
             target="_blank"
           >
             Descargar catálogo completo

@@ -84,7 +84,7 @@ const Footer = () => {
 
                     <Box>
                         <Link
-                            href="../catalog/catindustriasq.pdf"
+                            href="../catalog/industriasqcatalogo.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             underline="hover"
@@ -107,7 +107,7 @@ const Footer = () => {
                         </IconButton>
                         <IconButton
                             component="a"
-                            href="https://instagram.com"
+                            href="https://www.instagram.com/industriasq_uniformes/"
                             target="_blank"
                             rel="noopener"
                             sx={{ color: "white" }}

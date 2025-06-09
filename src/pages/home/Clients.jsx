@@ -56,7 +56,7 @@ const Clients = () => {
                     <Button
                         variant="contained"
                         color="primary"
-                        href="../catalog/catindustriasq.pdf"
+                        href="../catalog/industriasqcatalogo.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         sx={{
