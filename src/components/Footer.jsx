@@ -77,7 +77,7 @@ const Footer = () => {
                     <Box display="flex" alignItems="center" gap={2}>
                         <img src={logo} alt="Logo Industrias Q" style={{ height: "40px" }} />
                         <Box>
-                            <Typography variant="body2">Teléfono y Whatsapp: 844-173-7180</Typography>
+                            <Typography variant="body2">Teléfono y Whatsapp: 844-343-44-43</Typography>
                             <Typography variant="body2">Email: ventas@industriasq.com</Typography>
                         </Box>
                     </Box>
