@@ -84,7 +84,7 @@ const Footer = () => {
 
                     <Box>
                         <Link
-                            href="../catalog/industriasqcatalogo.pdf"
+                            href="../catalog/industriasqcatalogocompleto.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             underline="hover"
