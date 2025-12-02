@@ -15,7 +15,7 @@ const categories = [
     {
         name: "Línea Industrial",
         image: industrialImg,
-        link: "https://www.industriasq.com",
+        link: "https://industriasq.vercel.app",
     },
     {
         name: "Invierno",
